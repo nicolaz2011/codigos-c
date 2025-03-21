@@ -30,4 +30,4 @@ int main()
 		numtres = numdos;
 		numdos = aux;
 	}
-	printf ("el orden de los numeros de mayor a menor es: %d , %d y %d", numuno, numdos, numtres);
+	printf ("el orden de los numeros de menor a mayor es: %d , %d y %d", numuno, numdos, numtres);
