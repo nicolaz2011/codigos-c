@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() 
+{
+	int numuno, numdos, numtres;
+	int aux;
+	
+	printf ("ingrese un numero\n");
+	scanf ("%d", &numuno);
+	printf ("ingrese otro numero\n");
+	scanf ("%d", &numdos);
+	printf ("ingrese un ultimo numero\n");
+	scanf ("%d", &numtres);
+
+	if (numuno > numdos)
+	{
+		aux = numdos;
+		numdos = numuno;
+		numuno = aux;
+	}
+	if (numuno > numtres)
+	{
+		aux = numtres;
+		numtres = numuno;
+		numuno = aux;
+	}
+	if (numdos > numtres)
+	{
+		aux = numtres;
+		numtres = numdos;
+		numdos = aux;
+	}
+	printf ("el orden de los numeros de mayor a menor es: %d , %d y %d", numuno, numdos, numtres);
